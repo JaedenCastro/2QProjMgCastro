@@ -17,7 +17,7 @@
 			/* Included video */
 			.video  { 
 				width:560px; 
-				height:337px; 
+				height:315px; 
 				position:absolute;
 				border: 3px solid #F5DF98;
 				margin-left: 75px;
@@ -76,8 +76,8 @@
 <header> <!-- Title  -->
  <h1 style="text-align: center; font-family: 'Pacifico', cursive;"> Simple Pork Chops with Buttery Pan Sauce and Steamed Broccoli </h1>
 </header>
-	<section>
-	<iframe class="video" src="https://www.youtube.com/embed/5pV_LosNT1U" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<section> <!-- Autoplay works on Internet Explorer, but not on chrome.  -->
+		<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/5pV_LosNT1U?&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</section>
 	<section class="box1"> <!-- Procedure -->
 	<h2>Procedure </h2> 
