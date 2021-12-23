@@ -1,0 +1,57 @@
+/* Navigation Bar */
+ aside {
+  height: 100%;
+  width: 300px; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color: #B6A6A1; 
+  overflow-x: hidden; 
+  padding: 20px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #523D3D;
+  display: block;  
+  font-family: 'Roboto', sans-serif;
+}
+/*Sidebar Text */
+
+body {
+	background-color: #383636;
+}
+/* main page*/
+header {
+  position: relative;
+  margin-left: 320px; /* Same as the width of the sidebar */
+  text-decoration: none;
+  color: #E27D60;
+  font-family: 'Roboto', sans-serif;
+}
+a {
+text-decoration: none;
+}
+.center { /* Centers Sidebar Image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	width: 90%;
+}
+aside h1 {
+	font-size: 40px;
+	font-family: 'Pacifico', cursive;
+}
+/* CSS for centerpiece Image */
+.mainimage { 
+	margin:40px 0px 0px 100px;
+	border: 3px solid #F5DF98; 
+	float:left;
+}
+section {
+  margin-left: 320px; /* Same as the width of the sidebar */
+  text-decoration: none;
+  color: #E27D60;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+}
