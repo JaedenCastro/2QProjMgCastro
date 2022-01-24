@@ -49,15 +49,68 @@
 				position:absolute;
 				overflow: auto;
 			}
+			:target#Anim1 {
+				animation-name:sidebar1;
+				animation-duration: 1s;
+				animation-fill-mode: forwards;
+			}
+			@keyframes sidebar1 {
+				0%   { left:-300px; top:0px;}
+				100%  {left:0px; top:0px;}
+			}
+			:target#Anim2 {
+				animation-name:sidebar2;
+				animation-duration: 1s;
 
+			}
+			@keyframes sidebar2 {
+				0%   { left:0px; top:0px;}
+				100%  {left:-370px; top:0px;}
+			}
+			.BarIcon{
+			position:absolute;
+			height:50px;
+			width:50px;
+			}
+			.XIcon
+			{
+			position:absolute;
+			height:50px;
+			width:50px;
+			left:250px;
+			top:10px;
+			}
 
 </style>
 	</head>
 <!-- Side navigation -->
 <body>
 <!-- Sidebar -->
-<aside>
-  <a href="../index.html"> Home Page </a>
+<div>
+<a href="#Anim1">
+<img alt="Icon" class="BarIcon"src="../images/BarIcon.png">
+</div>
+<aside id ="Anim1">
+<a href="#Anim2"> <img alt="Icon" class="XIcon"src="../images/XIcon.png"> </a>
+<a href="../index.html"> Home Page </a>
+  <h1> Ingredients: </h1> <p> Feeds Two </p>
+  <ul>
+	<li> 2 1-inch-thick pork chops
+	<li> 1 small shallot or red onion, chopped
+	<li> 1/4 cup white wine (or fruit juice)
+	<li> 1/4 cup water
+	<li> 1 teaspoon mustard
+	<li> 1/2 oz butter
+	<li> A few leaves of sage, thyme, etc.
+	<li> salt
+	<li> pepper
+	<li> olive oil
+   </ul>
+</aside>
+
+<aside id ="Anim2">
+<a href="#Anim2"> <img alt="Icon" class="XIcon"src="../images/XIcon.png"> </a>
+<a href="../index.html"> Home Page </a>
   <h1> Ingredients: </h1> <p> Feeds Two </p>
   <ul>
 	<li> 2 1-inch-thick pork chops
@@ -95,6 +148,8 @@
 		<li>Scrape off all the bits stuck to the pan with a wooden spoon then simmer for a few minutes. Turn off the heat and mix in mustard. Melt in butter when not bubbling and mix it in gradually as it melts.
 		<li>Tear in herbs, grind in pepper and add salt to the sauce. Slice pork chops and pour rested juice into the sauce. Serve with Broccoli and enjoy.
 	</ul>
+	<a href="#Anim1">Test link</a>
+	<a href="#Anim2">Test link</a>
 	</section>
 	
 	<section class="box2"> <!-- Notes on the Recipe-->

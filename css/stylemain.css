@@ -2,7 +2,7 @@
  aside {
   height: 100%;
   width: 300px; 
-  position: fixed; 
+  position: absolute; 
   z-index: 1; 
   top: 0; 
   left: 0;
@@ -14,6 +14,7 @@
   color: #523D3D;
   display: block;  
   font-family: 'Roboto', sans-serif;
+  left: -350px;
 }
 /*Sidebar Text */
 
@@ -22,7 +23,6 @@ body {
 }
 /* main page*/
 header {
-  position: relative;
   margin-left: 320px; /* Same as the width of the sidebar */
   text-decoration: none;
   color: #E27D60;

@@ -39,16 +39,58 @@
 				font-size: 15px;
 				padding: 0px 0px 0px 10px;
 				border-width: 3px 3px 0px 0px;
-				position:fixed;
+				position:relative;
 				overflow: auto;
 			}
+			:target#Anim1 {
+				animation-name:sidebar1;
+				animation-duration: 1s;
+				animation-fill-mode: forwards;
+			}
+			@keyframes sidebar1 {
+				0%   { left:-300px; top:0px;}
+				100%  {left:0px; top:0px;}
+			}
+			:target#Anim2 {
+				animation-name:sidebar2;
+				animation-duration: 1s;
 
+			}
+			@keyframes sidebar2 {
+				0%   { left:0px; top:0px;}
+				100%  {left:-370px; top:0px;}
+			}
+			.BarIcon{
+			position:absolute;
+			height:50px;
+			width:50px;
+			}
+			.XIcon
+			{
+			position:absolute;
+			height:50px;
+			width:50px;
+			left:250px;
+			top:10px;
+			}
 </style>
 	</head>
 
 <body>
 <!-- Sidebar -->
-<aside>
+<div>
+<a href="#Anim1">
+<img alt="Icon" class="BarIcon"src="images/BarIcon.png">
+</div>
+<aside id ="Anim1">
+<a href="#Anim2"> <img alt="Icon" class="XIcon"src="images/XIcon.png"> </a>
+  <h1> Recipes: </h1>
+  <p>Recipe #1: Porkchops with Pan Sauce</p>
+  <a href="htdocs/recipe1.html">
+	<img src="images/porkchopspansauce.jpg" width= "250px" alt="Pork Chops with Pan Sauce" class="center">
+	</a>
+</aside>
+<aside id="Anim2">
   <h1> Recipes: </h1>
   <p>Recipe #1: Porkchops with Pan Sauce</p>
   <a href="htdocs/recipe1.html">
@@ -65,6 +107,8 @@
 	</section>
 	
 	<footer> <!-- Sources and Citations -->
+	<a href="#Anim1">Test link</a>
+	<a href="#Anim2">Test link</a>
 	<p> Jaeden Miguel G. Castro </p>
 	<p> 9-Magnesium </p>
 	<p> Sources and Citations: </p>
