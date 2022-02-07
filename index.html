@@ -39,7 +39,7 @@
 				font-size: 15px;
 				padding: 0px 0px 0px 10px;
 				border-width: 3px 3px 0px 0px;
-				position:relative;
+				position:absolute;
 				overflow: auto;
 			}
 			:target#Anim1 {
@@ -60,55 +60,103 @@
 				0%   { left:0px; top:0px;}
 				100%  {left:-370px; top:0px;}
 			}
-			.BarIcon{
-			position:absolute;
-			height:50px;
-			width:50px;
+			.youtube {
+			width: 64px;
+			height: 64px;
+			position: absolute;
 			}
-			.XIcon
-			{
-			position:absolute;
-			height:50px;
-			width:50px;
-			left:250px;
-			top:10px;
+			
+			#socialmedia {
+			width: 64px;
+			height: 64x;
 			}
+			a img.hover {
+				display: none;
+			}
+			a img.default {
+				display: inherit;
+			}
+			a:hover img.hover {
+				display: inherit;
+			}
+			a:hover img.default {
+				display: none;
+			}
+
 </style>
 	</head>
 
 <body>
 <!-- Sidebar -->
 <div>
-<a href="#Anim1">
-<img alt="Icon" class="BarIcon"src="images/BarIcon.png">
+<a href="#Anim1"><img alt="Icon" class="BarIcon"src="images/BarIcon.png"></a>
 </div>
 <aside id ="Anim1">
 <a href="#Anim2"> <img alt="Icon" class="XIcon"src="images/XIcon.png"> </a>
-  <h1> Recipes: </h1>
+<h1> Recipes: </h1>
   <p>Recipe #1: Porkchops with Pan Sauce</p>
-  <a href="htdocs/recipe1.html">
-	<img src="images/porkchopspansauce.jpg" width= "250px" alt="Pork Chops with Pan Sauce" class="center">
+  <a href="htdocs/recipe1.html"><img src="images/porkchopspansauce.jpg" width= "250px" height = "141px" alt="Pork Chops with Pan Sauce" class="center"></a>
+  <p>Recipe #2: Chicken and Rice Bake</p>
+  <a href="htdocs/recipe2.html"><img src="images/chickenricebake.png" width= "250px" height = "141px" alt="Chicken and Rice Bake" class="center"></a>
+  <p>Recipe #3: Baked Sushi</p>
+  <a href="htdocs/recipe3.html"><img src="images/bakedsushi.png" width= "250px" height = "141px" alt="Baked Sushi" class="center"></a>
+  <p>Recipe #4: Chocolate Cake with Italian Meringue</p>
+  <a href="htdocs/recipe4.html"><img src="images/chocolatecake.png" width= "100px" height = "141px" alt="Chocolate Cake with Italian Meringue" class="center"></a>
+  
+	<h6> My Facebook, Adam Ragusea's Youtube and Facebook:</h6>
+	
+	<a href="https://www.youtube.com/channel/UC9_p50tH3WmMslWRWKnM7dQ">
+	<img src="images/Youtube1.jpg" alt="Adam Ragusea's Youtube" title="Adam Ragusea's Youtube" class="default" id="socialmedia"> 
+	<img src="images/Youtube2.png" alt="Adam Ragusea's Youtube" title="Adam Ragusea's Youtube" class="hover" id="socialmedia">
 	</a>
+	<a href="https://twitter.com/aragusea">
+	<img src="images/Twitter1.png" alt="Adam Ragusea's Twitter" title="Adam Ragusea's Twitter" class="default" id="socialmedia"> 
+	<img src="images/Twitter2.png" alt="Adam Ragusea's Twitter" title="Adam Ragusea's Twitter" class="hover" id="socialmedia">
+	</a>
+	<a href="https://www.facebook.com/raedenjin">
+	<img src="images/Facebook1.png" alt="My Facebook" class="default" title="My Facebook" id="socialmedia"></img>
+	<img src="images/Facebook2.png" alt="My Facebook" class="hover" title="My Facebook" id="socialmedia"></img>
+	</a>
+  <!-- <a href="https://twitter.com/aragusea"><img src="images/chocolatecake.png" width= "250px" height = "141px" alt="Chocolate Cake with Italian Meringue" class="center"></a>
+  <a href="https://www.facebook.com/raedenjin"><img src="images/chocolatecake.png" width= "250px" height = "141px" alt="Chocolate Cake with Italian Meringue" class="center"></a> -->
 </aside>
 <aside id="Anim2">
+<a href="#Anim2"> <img alt="Icon" class="XIcon"src="images/XIcon.png"> </a>
   <h1> Recipes: </h1>
   <p>Recipe #1: Porkchops with Pan Sauce</p>
-  <a href="htdocs/recipe1.html">
-	<img src="images/porkchopspansauce.jpg" width= "250px" alt="Pork Chops with Pan Sauce" class="center">
+  <a href="htdocs/recipe1.html"><img src="images/porkchopspansauce.jpg" width= "250px" height = "141px" alt="Pork Chops with Pan Sauce" class="center"></a>
+  <p>Recipe #2: Chicken and Rice Bake</p>
+  <a href="htdocs/recipe2.html"><img src="images/chickenricebake.png" width= "250px" height = "141px" alt="Chicken and Rice Bake" class="center"></a>
+  <p>Recipe #3: Baked Sushi</p>
+  <a href="htdocs/recipe3.html"><img src="images/bakedsushi.png" width= "250px" height = "141px" alt="Baked Sushi" class="center"></a>
+  <p>Recipe #4: Chocolate Cake with Italian Meringue</p>
+  <a href="htdocs/recipe4.html"><img src="images/chocolatecake.png" width= "250px" height = "141px" alt="Chocolate Cake with Italian Meringue" class="center"></a>
+  
+ <h6> My Facebook, Adam Ragusea's Youtube and Facebook:</h6>
+  	
+	<a href="https://www.youtube.com/channel/UC9_p50tH3WmMslWRWKnM7dQ">
+	<img src="images/Youtube1.jpg" alt="Adam Ragusea's Youtube" title="Adam Ragusea's Youtube" class="default" id="socialmedia"> 
+	<img src="images/Youtube2.png" alt="Adam Ragusea's Youtube" title="Adam Ragusea's Youtube" class="hover" id="socialmedia">
+	</a>
+	<a href="https://twitter.com/aragusea">
+	<img src="images/Twitter1.png" alt="Adam Ragusea's Twitter" title="Adam Ragusea's Twitter" class="default" id="socialmedia"> 
+	<img src="images/Twitter2.png" alt="Adam Ragusea's Twitter" title="Adam Ragusea's Twitter" class="hover" id="socialmedia">
+	</a>
+	<a href="https://www.facebook.com/raedenjin">
+	<img src="images/Facebook1.png" alt="My Facebook" class="default" title="My Facebook" id="socialmedia"></img>
+	<img src="images/Facebook2.png" alt="My Facebook" class="hover" title="My Facebook" id="socialmedia"></img>
 	</a>
 </aside>
 <!-- Main Part of Website -->
 <header> <!-- Title  -->
  <h1 style="text-align: center; font-size: 40px; font-family: 'Pacifico', cursive;"> Five Awesome Recipes Accessible for Everyone </h1>
- <img src="images/Food.jpg" width="600px" height= alt="Sample Food Image" title="Sample Food Image" class="mainimage">
+ <img src="images/Food.jpg" width="600px" alt="Sample Food Image" title="Sample Food Image" class="mainimage">
  
 	<section class="box1"> <!-- Introduction to Website -->   
 	<p> Hello! My name is Jaeden and this is my website! Ever since I was a child, I have enjoyed eating food and the amazing experiences that come with it. From sharing food with my extended family at big occasions, to the small times where we would get a bucket of Fried Chicken for lunch or for dinner. Now, in the time of the pandemic, I feel that being able to experience good food that is both easy to cook and cheap is a necessity, especially for budding home cooks like myself. I will be sharing 5 recipes that fit all of these criteria while also fitting things you can easily get in the grocery store. </p>
 	</section>
 	
 	<footer> <!-- Sources and Citations -->
-	<a href="#Anim1">Test link</a>
-	<a href="#Anim2">Test link</a>
 	<p> Jaeden Miguel G. Castro </p>
 	<p> 9-Magnesium </p>
 	<p> Sources and Citations: </p>
