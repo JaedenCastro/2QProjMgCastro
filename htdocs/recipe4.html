@@ -15,17 +15,11 @@
 
 		<style>
 			/* Included video */
-			.video  { 
-				width:560px; 
-				height:315px; 
-				position:absolute;
-				border: 3px solid #F5DF98;
-				margin-left: 75px;
-			}
+
 			/* Procedure */
 			.box1  { 
 				width:550px; 
-				height:690px; 
+				height:750px; 
 				border: 3px solid #F5DF98; 
 				float:right;
 				margin-left:1000px;
@@ -38,7 +32,7 @@
 			/* Notes on the Recipe */
 			.box2  { 
 				width:560px; 
-				height:360px; 
+				height:400px; 
 				border: 3px solid #F5DF98; 
 				float:left;
 				margin-left:400px;
@@ -49,39 +43,6 @@
 				position:absolute;
 				overflow: auto;
 			}
-			:target#Anim1 {
-				animation-name:sidebar1;
-				animation-duration: 1s;
-				animation-fill-mode: forwards;
-			}
-			@keyframes sidebar1 {
-				0%   { left:-300px; top:0px;}
-				100%  {left:0px; top:0px;}
-			}
-			:target#Anim2 {
-				animation-name:sidebar2;
-				animation-duration: 1s;
-
-			}
-			@keyframes sidebar2 {
-				0%   { left:0px; top:0px;}
-				100%  {left:-370px; top:0px;}
-			}
-			#socialmedia {
-				width: 64px;
-				height: 64x;
-			}
-			a img.hover {
-				display: none;
-			}
-			a img.default {
-				display: inherit;
-			}
-			a:hover img.hover {
-				display: inherit;
-			}
-			a:hover img.default {
-				display: none
 
 </style>
 	</head>
@@ -91,7 +52,7 @@
 <div>
 <a href="#Anim1"><img alt="Icon" class="BarIcon"src="../images/BarIcon.png"></a>
 </div>
-<aside id ="Anim1">
+<nav id ="Anim1">
 <a href="#Anim2"> <img alt="Icon" class="XIcon"src="../images/XIcon.png"> </a>
 <h1> Recipes: </h1>
   <p>Recipe #1: Porkchops with Pan Sauce</p>
@@ -117,8 +78,8 @@
 	<img src="../images/Facebook1.png" alt="My Facebook" class="default" title="My Facebook" id="socialmedia"></img>
 	<img src="../images/Facebook2.png" alt="My Facebook" class="hover" title="My Facebook" id="socialmedia"></img>
 	</a>
-</aside>
-<aside id="Anim2">
+</nav>
+<nav id="Anim2">
 <a href="#Anim2"> <img alt="Icon" class="XIcon"src="images/XIcon.png"> </a>
   <h1> Recipes: </h1>
   <p>Recipe #1: Porkchops with Pan Sauce</p>
@@ -128,7 +89,7 @@
   <p>Recipe #3: Baked Sushi</p>
   <a href="../htdocs/recipe3.html"><img src="../images/bakedsushi.png" width= "250px" height = "141px" alt="Baked Sushi" class="center"></a>
   <h2>Home Page</h2>
-  <a href="../index.html"><img src="../images/Food.jpg" width= "250px" height = "141px" alt="Home Page" class="center"></a>
+  <a></a>
   
   <h6> My Facebook, Adam Ragusea's Youtube and Facebook:</h6>
   
@@ -144,7 +105,7 @@
 	<img src="../images/Facebook1.png" alt="My Facebook" class="default" title="My Facebook" id="socialmedia"></img>
 	<img src="../images/Facebook2.png" alt="My Facebook" class="hover" title="My Facebook" id="socialmedia"></img>
 	</a>
-</aside>
+</nav>
 <!-- Main Part of Website -->
 <header> <!-- Title  -->
  <h1 style="text-align: center; font-family: 'Pacifico', cursive;">Chocolate Cake with Itallian Meringue</h1>
@@ -178,7 +139,7 @@
 	<section class="box2"> <!-- Notes on the Recipe-->
 	<p> This is a delicious chocolate cake that uses a special kind of frosting. Italian Meringue tastes like marshmallows, and probably is made of marshmallows.  This recipe, while not the healthiest, is a decadent dish that will please any crowd of people with a soft, dense foundation and a creamy frosting that is a little bit more creative than regular frosting. For beginner cooks or bakers, this is a step up from the other dishes I posted and is a great learning experience. While it looks like any kid’s dream to eat, it is also a dish that is good for adults, too.</p>
 	</section>
-<div class="right">
+<aside class="right">
   <h1> Ingredients: </h1> <p> Feeds Two </p>
   <h3> For the Cake Batter: </h3>
   <ul>
@@ -206,6 +167,6 @@
 	<li> Squeeze of corn syrup (if you have it)
 	<li> 1 teaspoon vanilla extract
    </ul>
-</div>
+</aside>
 </body>
 </html>

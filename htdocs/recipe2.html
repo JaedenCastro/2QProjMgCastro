@@ -15,17 +15,11 @@
 
 		<style>
 			/* Included video */
-			.video  { 
-				width:560px; 
-				height:315px; 
-				position:absolute;
-				border: 3px solid #F5DF98;
-				margin-left: 75px;
-			}
+
 			/* Procedure */
 			.box1  { 
 				width:550px; 
-				height:690px; 
+				height:750px; 
 				border: 3px solid #F5DF98; 
 				float:right;
 				margin-left:1000px;
@@ -38,7 +32,7 @@
 			/* Notes on the Recipe */
 			.box2  { 
 				width:560px; 
-				height:360px; 
+				height:400px; 
 				border: 3px solid #F5DF98; 
 				float:left;
 				margin-left:400px;
@@ -49,39 +43,7 @@
 				position:absolute;
 				overflow: auto;
 			}
-			:target#Anim1 {
-				animation-name:sidebar1;
-				animation-duration: 1s;
-				animation-fill-mode: forwards;
-			}
-			@keyframes sidebar1 {
-				0%   { left:-300px; top:0px;}
-				100%  {left:0px; top:0px;}
-			}
-			:target#Anim2 {
-				animation-name:sidebar2;
-				animation-duration: 1s;
 
-			}
-			@keyframes sidebar2 {
-				0%   { left:0px; top:0px;}
-				100%  {left:-370px; top:0px;}
-			}
-			#socialmedia {
-				width: 64px;
-				height: 64x;
-			}
-			a img.hover {
-				display: none;
-			}
-			a img.default {
-				display: inherit;
-			}
-			a:hover img.hover {
-				display: inherit;
-			}
-			a:hover img.default {
-				display: none	
 </style>
 	</head>
 <!-- Side navigation -->
@@ -90,7 +52,7 @@
 <div>
 <a href="#Anim1"><img alt="Icon" class="BarIcon"src="../images/BarIcon.png"></a>
 </div>
-<aside id ="Anim1">
+<nav id ="Anim1">
 <a href="#Anim2"> <img alt="Icon" class="XIcon"src="../images/XIcon.png"> </a>
 <h1> Recipes: </h1>
   <p>Recipe #1: Porkchops with Pan Sauce</p>
@@ -116,8 +78,8 @@
 	<img src="../images/Facebook1.png" alt="My Facebook" class="default" title="My Facebook" id="socialmedia"></img>
 	<img src="../images/Facebook2.png" alt="My Facebook" class="hover" title="My Facebook" id="socialmedia"></img>
 	</a>
-</aside>
-<aside id="Anim2">
+</nav>
+<nav id="Anim2">
 <a href="#Anim2"> <img alt="Icon" class="XIcon"src="../images/XIcon.png"> </a>
   <h1> Recipes: </h1>
   <p>Recipe #1: Porkchops with Pan Sauce</p>
@@ -143,10 +105,10 @@
 	<img src="../images/Facebook1.png" alt="My Facebook" class="default" title="My Facebook" id="socialmedia"></img>
 	<img src="../images/Facebook2.png" alt="My Facebook" class="hover" title="My Facebook" id="socialmedia"></img>
 	</a>
-</aside>
+</nav>
 <!-- Main Part of Website -->
 <header> <!-- Title  -->
- <h1 style="text-align: center; font-family: 'Pacifico', cursive;">Chicken and Rice Bake</h1>
+ <h1>Chicken and Rice Bake</h1>
 </header>
 	<section> <!-- Autoplay works on Internet Explorer, but not on chrome.  -->
 		<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ntd_Y2eywc4?&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -168,7 +130,7 @@
 	<section class="box2"> <!-- Notes on the Recipe-->
 	<p> This is a nice, healthy, and tasty meal for those that want a big portion of food done in about an hour and may be tired of just the regular Filipino food. Even if I myself love food such as Adobo, I can not say that I would like to eat it all the time and would not want to try other flavors. This recipe is good for those that have an oven and an oven-safe pan. The taste of the dish itself is delicious, providing risotto-like flavors at minimal effort, stress, and time. It is also a very flexible dish, with this recipe being mostly a base where you can add whatever kinds of other seasonings or flavors you want to it. This recipe is perfect for the starting home cook to experiment. Simply put stuff in a pan, bake it a bit, and enjoy.</p>
 	</section>
-<div class="right">
+<aside class="right">
   <h1> Ingredients: </h1> <p> Feeds 6-8 </p>
   <ul>
 	<li> 1 lb (.5 kg) chicken breast
@@ -183,7 +145,7 @@
 	<li> olive oil, salt, pepper
 	<li> lemons/kalamansi
    </ul>
-</div>
+</aside>
 </body>
 </html>
 
